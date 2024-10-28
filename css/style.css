@@ -1,0 +1,73 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 span {
+    font-weight: bold;
+}
+
+/* Contenedor de categorías */
+.categories-container {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Tarjeta individual de categoría */
+.category-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+}
+
+.category-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.category-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.category-card a {
+    display: inline-block;
+    margin-top: 1em;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+/* Estilo responsive */
+@media (min-width: 600px) {
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .categories-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
