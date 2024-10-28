@@ -16,6 +16,12 @@ header {
     background-color: #000;
     color: #fff;
     padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    flex-grow: 1;
     text-align: center;
 }
 
@@ -23,15 +29,24 @@ header h1 span {
     font-weight: bold;
 }
 
+#back-button {
+    background: #f44336;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
 /* Contenedor de categorías */
-.categories-container {
+.categories-container, .books-container {
     display: grid;
     gap: 1em;
     padding: 1em;
 }
 
 /* Tarjeta individual de categoría */
-.category-card {
+.category-card, .book-card {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,17 +54,28 @@ header h1 span {
     text-align: center;
 }
 
-.category-card h2 {
+/* Estilos específicos para la tarjeta de libros */
+.book-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.book-card h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.category-card h2, .book-card h2 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
 
-.category-card p {
+.category-card p, .book-card p {
     font-size: 0.9em;
     color: #666;
 }
 
-.category-card a {
+.category-card a, .book-card a {
     display: inline-block;
     margin-top: 1em;
     background-color: #333;
@@ -61,13 +87,13 @@ header h1 span {
 
 /* Estilo responsive */
 @media (min-width: 600px) {
-    .categories-container {
+    .categories-container, .books-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 900px) {
-    .categories-container {
+    .categories-container, .books-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
