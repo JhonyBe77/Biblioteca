@@ -6,6 +6,22 @@ const loadingMessage = document.getElementById('loading-message');
 const categoriesContainer = document.getElementById('categories');
 const booksContainer = document.getElementById('books-list');
 const backButton = document.getElementById('back-button');
+const header = document.getElementById('header');
+
+// Función para renderizar la imagen en el header
+function renderHeaderImage() {
+    // Limpiar cualquier contenido previo
+    header.innerHTML = '';
+
+    // Crear un elemento de imagen
+    const headerImage = document.createElement('img');
+    headerImage.src = 'assets/img/NYT_bestSeller.png'; // Reemplaza con la URL de tu imagen
+    headerImage.alt = 'New York Times Best Sellers'; // Texto alternativo
+    headerImage.style.width = '100%'; // Ajusta el estilo según tus necesidades
+
+    // Agregar la imagen al header
+    header.appendChild(headerImage);
+}
 
 // Función para obtener las categorías
 async function fetchCategories() {
@@ -62,7 +78,7 @@ async function renderCategories() {
             <p>Oldest: ${category.oldest_published_date}</p>
             <p>Newest: ${category.newest_published_date}</p>
             <p>Updated: ${category.updated}</p>
-            <a href="#" data-list="${category.list_name}">READ MORE!</a>
+            <a href="#" class="button-read-more" data-list="${category.list_name}">READ MORE ></a>
         `;
 
         categoriesContainer.appendChild(card);
@@ -103,7 +119,7 @@ async function renderBooks(listName) {
             <img src="${book.book_image}" alt="${book.title}">
             <p><strong>Semanas en lista:</strong> ${book.weeks_on_list}</p>
             <p>${book.description}</p>
-            <a href="${book.amazon_product_url}" target="_blank">Comprar en Amazon</a>
+            <a href="${book.amazon_product_url}" target="_blank" class="button-buy-amazon">Comprar en Amazon</a>
         `;
 
         booksContainer.appendChild(card);
@@ -117,5 +133,6 @@ backButton.addEventListener('click', () => {
 
 // Llamada inicial para cargar las categorías
 document.addEventListener('DOMContentLoaded', () => {
+    renderHeaderImage();
     renderCategories();
 });
