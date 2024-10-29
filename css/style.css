@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #4d4861;
+    color: #f7C4A5;
 }
 
 /* Estilo para el header */
 header {
-    background-color: #fff;
+    background-color: #4d4861;
     color: #333;
     padding: 1em;
     display: flex;
@@ -30,13 +30,14 @@ header h1 span {
 }
 
 #back-button {
-    background: #f44336;
-    color: #fff;
+    background: #f68986;
+    color: #383449;
     border: none;
     padding: 0.5em 1em;
     cursor: pointer;
     margin-left: 20px;
 }
+
 
 /* Contenedor de categorías */
 .categories-container, .books-container {
@@ -47,8 +48,9 @@ header h1 span {
 
 /* Tarjeta individual de categoría */
 .category-card, .book-card {
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    background-color: #4d4861;
+    border: 1px solid #7f7396;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.250);
     padding: 1em;
     text-align: left;
 }
@@ -71,7 +73,7 @@ header h1 span {
 
 .category-card p, .book-card p {
     font-size: 0.9em;
-    color: #666666;
+    color: #f3efe9;
 }
 
 .category-card a, .book-card a {
@@ -85,25 +87,25 @@ header h1 span {
 }
 /* Estilos para los botones */
 .category-card .button-read-more {
-    background-color: #fff;
-    color: #666666;
-    border: 1px solid #ccc;
+    background-color: #4d4861;
+    color: #f7C4A5;
+    border: 1px solid #7c7190;
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 3px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.250);
     cursor: pointer;
     display: inline-block;
     transition: background-color 0.3s;
 }
 
 .category-card .button-read-more:hover {
-    background-color: #f0f0f0;
+    background-color: #7c7190;
 }
 
 .book-card .button-buy-amazon {
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #f7C4A5;
+    color: #4d4861;
     border: none;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -114,7 +116,7 @@ header h1 span {
 }
 
 .book-card .button-buy-amazon:hover {
-    background-color: #e68a00;
+    background-color: #e59462;
 }
 
 /* Estilo responsive */
