@@ -15,9 +15,9 @@ function renderHeaderImage() {
 
     // Crear un elemento de imagen
     const headerImage = document.createElement('img');
-    headerImage.src = 'assets/img/NYT_bestSeller.png'; // Reemplaza con la URL de tu imagen
+    headerImage.src = 'assets/img/TNYT_BestSeller3.png'; // Reemplaza con la URL de tu imagen
     headerImage.alt = 'New York Times Best Sellers'; // Texto alternativo
-    headerImage.style.width = '100%'; // Ajusta el estilo según tus necesidades
+    headerImage.style.width = '70%'; // Ajusta el estilo según tus necesidades
 
     // Agregar la imagen al header
     header.appendChild(headerImage);
