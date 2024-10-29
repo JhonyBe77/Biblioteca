@@ -38,7 +38,74 @@ header h1 span {
     margin-left: 20px;
 }
 
+#auth-buttons {
+    display: flex;               /* Usar Flexbox */
+    justify-content: center;     /* Centrar horizontalmente */
+    align-items: center;         /* Centrar verticalmente (si es necesario) */
+    gap: 1em;                    /* Espacio entre los botones */
+    margin: 20px 0;             /* Espaciado vertical */
+}
+#auth-section {
+    display: flex;               /* Usar Flexbox */
+    justify-content: center;     /* Centrar horizontalmente */
+    align-items: center;         /* Centrar verticalmente (si es necesario) */
+    gap: 1em;                    /* Espacio entre los botones */
+    margin: 20px 0;             /* Espaciado vertical */
+}
+/* Estilos para el botón "Iniciar sesión con correo" */
+#show-login-form-button {
+    background: #4d4861; /* Color de fondo diferente */
+    color: #f7C4A5; /* Color del texto diferente */
+    border: none; /* Sin borde */
+    padding: 0.5em 1em; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+/* Efecto hover para el botón "Iniciar sesión con correo" */
+#show-login-form-button:hover {
+    background: #7c7190; /* Color de fondo en hover diferente */
+}
 
+/* Estilos para el botón "Cerrar sesión" */
+#logout-button {
+    background: #d9534f; /* Color de fondo diferente para cerrar sesión */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.5em 1em; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    display: none; /* Ocultar por defecto */
+}
+
+/* Efecto hover para el botón "Cerrar sesión" */
+#logout-button:hover {
+    background: #c9302c; /* Color de fondo en hover */
+}
+
+#email-login-button, #register-button {
+    background: #f7C4A5;
+    color: #383449;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#email-login-button:hover, #register-button:hover {
+    background: #e59462;
+}
+#loading-message {
+    display: flex;               /* Usar Flexbox */
+    justify-content: center;     /* Centrar horizontalmente */
+    align-items: center;         /* Centrar verticalmente (si es necesario) */
+    gap: 1em;                    /* Espacio entre los botones */
+    margin: 20px 0;             /* Espaciado vertical */
+}
 /* Contenedor de categorías */
 .categories-container, .books-container {
     display: grid;
