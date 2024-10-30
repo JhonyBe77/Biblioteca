@@ -10,16 +10,43 @@
 </head>
 
 <body>
-    <header id="header">
-        <h1><span>New York Times</span> Best Sellers</h1>
+    <header>
+        <div id="header"></div>
+        <div id="auth-buttons">
+            <button id="show-login-form-button" style="display: none;">
+                <img id="icono-login" src="../assets/img/llave.png"/>Iniciar sesión con correo</button>
+            <button id="logout-button" style="display: none;">
+                <img id="icono-close" src="../assets/img/icono_cerrar.png"/><br>Cerrar sesión</button>
+        </div>
+        
     </header>
+    
     <main>
+        <div id="auth-section">
+            <!-- Formulario para autenticación con correo -->
+            <div id="auth-form" style="display: none;">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button id="register-button">Registrarse</button>
+                <button id="email-login-button">Iniciar sesión</button>
+                
+            </div>
+        </div>
+
+        <!-- Contenedores para la API de libros -->
         <button id="back-button" style="display: none;">⬅ Volver al Index</button>
-        <div id="loading-message">Cargando categorías...</div>
+        <div id="loading-message">
+            <div id="loader">
+            </div>
+        </div>
         <div id="categories" class="categories-container"></div>
         <div id="books-list" class="books-container" style="display: none;"></div>
     </main>
-    
+
+    <!-- SDK de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
