@@ -58,20 +58,22 @@ logoutButton.addEventListener('click', () => {
 });
 
 // Cambios en la interfaz según el estado de autenticación
-auth.onAuthStateChanged(user => {
+auth.onAuthStateChanged(async user => {
     console.log("User state changed:", user); // Comprobación en consola
     if (user) {
         // Usuario autenticado
         logoutButton.style.display = 'inline-block';
-        showLoginFormButton.style.display = 'none'; // Oculta el botón de inicio de sesión
-        authForm.style.display = 'none'; // Ocultar el formulario después de iniciar sesión
-        renderCategories(); // Llamar a renderCategories aquí solo si el usuario está autenticado
+        showLoginFormButton.style.display = 'none';
+        authForm.style.display = 'none';
+
+        loadingMessage.style.display = 'block'; // Mostrar el cargador solo cuando el usuario esté autenticado
+        await renderCategories(); // Esperar a que se carguen las categorías
+        loadingMessage.style.display = 'none'; // Ocultar el cargador al finalizar
     } else {
         // Usuario no autenticado
         showLoginFormButton.style.display = 'inline-block';
         logoutButton.style.display = 'none';
-        // Opcional: puedes limpiar la vista de categorías si no quieres que se vean sin autenticación
-        categoriesContainer.innerHTML = '';
+        categoriesContainer.innerHTML = ''; // Limpiar categorías si el usuario no está autenticado
     }
 });
 
@@ -167,14 +169,14 @@ async function fetchBooks(listName) {
 // Función para renderizar libros
 async function renderBooks(listName) {
     console.log("Rendering books for:", listName); // Comprobación en consola
-    loadingMessage.style.display = 'block';
+    loadingMessage.style.display = 'block'; // Mostrar el cargador
     categoriesContainer.style.display = 'none';
     booksContainer.style.display = 'grid';
     backButton.style.display = 'inline-block';
     booksContainer.innerHTML = '';
 
     const books = await fetchBooks(listName);
-    loadingMessage.style.display = 'none';
+    loadingMessage.style.display = 'none'; // Ocultar el cargador después de cargar los libros
 
     if (books.length === 0) {
         booksContainer.innerHTML = '<p>No se pudieron cargar los libros.</p>';

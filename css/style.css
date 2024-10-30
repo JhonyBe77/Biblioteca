@@ -144,12 +144,13 @@ header h1 span {
 #email-login-button:hover, #register-button:hover {
     background: #e59462;
 }
- #loading-message {
+#loading-message {
     display: flex;              
     justify-content: center;    
     align-items: center;        
     gap: 1em;                   
-    margin: 20px 0;            
+    margin: 20px 0;
+    display: none;             
 }
 
  /* #loading-message {
