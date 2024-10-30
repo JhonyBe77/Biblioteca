@@ -13,8 +13,10 @@
     <header>
         <div id="header"></div>
         <div id="auth-buttons">
-            <button id="show-login-form-button">Iniciar sesión con correo</button>
-            <button id="logout-button" style="display: none;">Cerrar sesión</button>
+            <button id="show-login-form-button" style="display: none;">
+                <img id="icono-login" src="../assets/img/llave.png"/>Iniciar sesión con correo</button>
+            <button id="logout-button" style="display: none;">
+                <img id="icono-close" src="../assets/img/icono_cerrar.png"/><br>Cerrar sesión</button>
         </div>
         
     </header>
@@ -33,7 +35,10 @@
 
         <!-- Contenedores para la API de libros -->
         <button id="back-button" style="display: none;">⬅ Volver al Index</button>
-        <div id="loading-message">Cargando categorías...</div>
+        <div id="loading-message">
+            <div id="loader">
+            </div>
+        </div>
         <div id="categories" class="categories-container"></div>
         <div id="books-list" class="books-container" style="display: none;"></div>
     </main>

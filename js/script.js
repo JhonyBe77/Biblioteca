@@ -63,6 +63,7 @@ auth.onAuthStateChanged(user => {
     if (user) {
         // Usuario autenticado
         logoutButton.style.display = 'inline-block';
+        showLoginFormButton.style.display = 'none'; // Oculta el botón de inicio de sesión
         authForm.style.display = 'none'; // Ocultar el formulario después de iniciar sesión
         renderCategories(); // Llamar a renderCategories aquí solo si el usuario está autenticado
     } else {
