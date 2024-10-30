@@ -37,14 +37,4 @@ Este proyecto se encuentra en su Fase II, que incluye la integración de Firebas
 - **Autenticación con Firebase Auth**: Los usuarios pueden registrarse y acceder mediante Firebase Auth. Una vez autenticados, se habilita la funcionalidad de guardar sus libros favoritos.
 - **Base de datos de Firebase**: Los datos de favoritos se almacenan de forma segura en la base de datos de Firebase, accesibles solo para el usuario autenticado.
 
-## Estructura del Proyecto
-├── index.html         # Archivo HTML principal
-├── css/
-│   └── styles.css     # Estilos y diseño responsive
-├── js/
-│   ├── app.js         # Lógica de manipulación del DOM y gestión de eventos
-│   └── firebase.js    # Configuración de Firebase y funciones de autenticación
-├── assets/            # Recursos de imágenes, íconos, etc.
-└── README.md          # Este archivo README
-
 
