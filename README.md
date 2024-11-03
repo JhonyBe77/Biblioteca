@@ -49,14 +49,14 @@ Este proyecto está en su segunda fase de desarrollo, con funcionalidades avanza
 Aquí tienes algunas capturas de pantalla de la aplicación:
 
 <p align="center">
-  <img src="../assets/img/mobile1.png" alt="Vista móvil" width="100"/>
-  <img src="../assets/img/mobile2.png" alt="Vista móvil" width="100"/>
-  <img src="../assets/img/mobile3.png" alt="Vista móvil" width="100"/>
+  <img src="assets/img/mobile1.png" alt="Vista móvil" width="100"/>
+  <img src="assets/img/mobile2.png" alt="Vista móvil" width="100"/>
+  <img src="assets/img/mobile3.png" alt="Vista móvil" width="100"/>
 </p>
 
 <p align="center">
-  <img src="../assets/img/desktop1.png" alt="Vista de escritorio" width="300"/>
-  <img src="../assets/img/desktop2.png" alt="Vista de escritorio" width="300"/>
+  <img src="assets/img/desktop1.png" alt="Vista de escritorio" width="300"/>
+  <img src="assets/img/desktop2.png" alt="Vista de escritorio" width="300"/>
 </p>
 
 
