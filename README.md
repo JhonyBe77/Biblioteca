@@ -8,11 +8,11 @@ Puedes acceder a la versión en vivo del proyecto en el siguiente enlace:
 [Ver Biblioteca Dashboard en GitHub Pages](https://jhonybe77.github.io/Biblioteca/)
 
 ## Índice
-- [Características](#características)
+- [Características](#caracteristicas)
 - [Requisitos del Proyecto](#requisitos-del-proyecto)
 - [Especificaciones](#especificaciones)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Instalación y Uso](#instalación-y-uso)
+- [Instalación y Uso](#instalacion-y-uso)
 - [Mejoras Futuras](#mejoras-futuras)
 
 ---
