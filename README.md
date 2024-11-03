@@ -2,20 +2,10 @@
 
 Este proyecto es un dashboard de biblioteca que permite a los usuarios explorar y gestionar una lista de libros a través de una integración dinámica con la API de Libros del NY Times. Permite a los usuarios explorar diferentes listas de libros y acceder a información detallada, como posiciones en el ranking, descripciones, enlaces de compra, y más.
 
-## Despliegue en GitHub Pages 🌐
+## 🌐 Despliegue en GitHub Pages
 
 Puedes acceder a la versión en vivo del proyecto en el siguiente enlace:  
 [Ver Biblioteca Dashboard en GitHub Pages](https://jhonybe77.github.io/Biblioteca/)
-
-## Índice
-- [Características](#caracteristicas)
-- [Requisitos del Proyecto](#requisitos-del-proyecto)
-- [Especificaciones](#especificaciones)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Instalación y Uso](#instalacion-y-uso)
-- [Mejoras Futuras](#mejoras-futuras)
-
----
 
 ## Características
 - **Interfaz dinámica en tiempo real**: Actualización automática de contenido desde la API de Libros del NY Times, con datos como posiciones en el ranking, descripciones, imágenes y enlaces de compra.
@@ -25,7 +15,7 @@ Puedes acceder a la versión en vivo del proyecto en el siguiente enlace:
 - **Animación de carga**: Mejora la experiencia del usuario mientras se carga el contenido.
 - **Buenas prácticas y control de versiones**: Código limpio y organizado, gestionado desde GitHub con ramas para cada funcionalidad.
 
-## Requisitos del Proyecto 🚀
+## 🚀 Requisitos del Proyecto
 Este proyecto fue desarrollado siguiendo estas pautas:
 
 1. **Manipulación dinámica del DOM**: La interfaz se actualiza con JavaScript para reflejar los cambios del usuario sin necesidad de recargar la página.
@@ -44,7 +34,7 @@ Este proyecto está en su segunda fase de desarrollo, con funcionalidades avanza
 - **Almacenamiento de Favoritos en Firebase Firestore**: Los favoritos de cada usuario se guardan en una base de datos segura en Firebase.
 - **Integración de API Dinámica**: Datos en tiempo real desde la API de Libros del NY Times, que incluyen descripción detallada, imagen de portada, posición en el ranking y enlaces de compra.
 
-## Vistas del Proyecto 📸
+## 📸 Vistas del Proyecto
 
 Aquí tienes algunas capturas de pantalla de la aplicación:
 
@@ -59,7 +49,9 @@ Aquí tienes algunas capturas de pantalla de la aplicación:
   <img src="assets/img/desktop2.png" alt="Vista de escritorio" width="300"/>
 </p>
 
-## Estructura del Proyecto 📁
+
+
+## 📁 Estructura del Proyecto
 
 La estructura del proyecto es la siguiente:
 
@@ -75,14 +67,14 @@ La estructura del proyecto es la siguiente:
 └── README.md               # Documentación del proyecto
 ```
 
-## Instalación y Uso 🛠️
+## 🛠️ Instalación y Uso
 
 1. Clona el repositorio: `git clone <URL del repositorio>`
 2. Instala Firebase en el proyecto: `npm install firebase`
 3. Configura Firebase Authentication y Firestore en tu proyecto de Firebase.
 4. Abre `index.html` en tu navegador para visualizar la aplicación.
 
-## Mejoras Futuras ✨
+## ✨ Mejoras Futuras
 
 - **Sistema de Favoritos Expandido**: Agregar una página donde el usuario pueda ver y gestionar sus libros favoritos.
 - **Firebase Cloud Storage**: Permitir a los usuarios subir fotos de perfil, almacenando la URL en su documento de Firestore.
